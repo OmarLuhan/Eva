@@ -50,7 +50,7 @@ static async Task<string> ReadOpcodesponse(string message)
     var psi = new ProcessStartInfo
     {
         FileName = "opencode",
-        ArgumentList = { "run", message, "--format", "json" },
+        ArgumentList = { "run", message, "-s", "ses_1d63e717fffe9Yko62healxMFW", "--format", "json" },
         RedirectStandardOutput = true,
         UseShellExecute = false,
         CreateNoWindow = true
